@@ -1,3 +1,6 @@
+#define __USE_LARGEFILE64
+#define _LARGEFILE_SOURCE
+#define _LARGEFILE64_SOURCE
 #include <malloc.h>
 #include <sys/types.h>
 

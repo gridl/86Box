@@ -1,12 +1,6 @@
 /* Copyright holders: Sarah Walker, Tenshi
    see COPYING for more details
 */
-#ifdef __unix
-
-#include "allegro-main.h"
-
-#else
-
 typedef struct
 {
         int w, h;
@@ -27,8 +21,6 @@ typedef RGB PALETTE[256];
 
 #define makecol(r, g, b)    ((b) | ((g) << 8) | ((r) << 16))
 #define makecol32(r, g, b)  ((b) | ((g) << 8) | ((r) << 16))
-
-#endif
 
 extern BITMAP *buffer, *buffer32;
 

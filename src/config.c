@@ -48,14 +48,17 @@
 #include "scsi/scsi.h"
 #include "win/plat_joystick.h"
 #include "win/plat_midi.h"
+#include "platform/platform.h"
 #include "sound/midi.h"
 #include "sound/snd_dbopl.h"
 #include "sound/snd_mpu401.h"
 #include "sound/snd_opl.h"
 #include "sound/sound.h"
 #include "video/video.h"
+#ifdef _WIN32
 #include "win/win.h"
 #include "win/win_language.h"
+#endif
 
 
 wchar_t config_file_default[256];

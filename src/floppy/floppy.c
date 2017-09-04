@@ -16,8 +16,10 @@
  *		Copyright 2008-2017 Sarah Walker.
  *		Copyright 2016,2017 Miran Grca.
  */
+#ifdef WIN32
 #define UNICODE
 #include <windows.h>
+#endif
 #include "../ibm.h"
 #include "../config.h"
 #include "../timer.h"

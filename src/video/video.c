@@ -683,21 +683,21 @@ void video_blit_memtoscreen_8(int x, int y, int w, int h)
 }
 
 #ifdef __unix
-void d3d_fs_take_screenshot(char *fn)
-{
-}
-
-void d3d_take_screenshot(char *fn)
-{
-}
-
-void ddraw_fs_take_screenshot(char *fn)
-{
-}
-
-void ddraw_take_screenshot(char *fn)
-{
-}
+//void d3d_fs_take_screenshot(char *fn)
+//{
+//}
+//
+//void d3d_take_screenshot(char *fn)
+//{
+//}
+//
+//void ddraw_fs_take_screenshot(char *fn)
+//{
+//}
+//
+//void ddraw_take_screenshot(char *fn)
+//{
+//}
 
 void take_screenshot()
 {
