@@ -19,6 +19,8 @@
 #ifdef WIN32
 #define UNICODE
 #include <windows.h>
+#elif __linux__
+#include "../lnx/linux.h"
 #endif
 #include "../ibm.h"
 #include "../config.h"

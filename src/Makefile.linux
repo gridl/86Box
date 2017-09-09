@@ -317,6 +317,7 @@ VIDOBJ	= video.o \
 	  vid_olivetti_m24.o \
 	  vid_pc1512.o vid_pc1640.o vid_pc200.o \
 	  vid_tandy.o vid_tandysl.o
+LNXOBJ	= lnx_thread.o lnx_io.o linux.o lnx_joystick.o lnx_midi.o cdrom_ioctl_lnx.o lnx_mouse.o
 ifeq ($(DEV_BRANCH), y)
 ifeq ($(CIRRUS), y)
 CIRRUSOBJ = vid_cl_gd.o vid_cl_gd_blit.o vid_cl_ramdac.o
@@ -329,7 +330,7 @@ endif
 OBJ	= $(MAINOBJ) $(CPUOBJ) $(MACHINEOBJ) $(DEVOBJ) \
 	  $(FDDOBJ) $(CDROMOBJ) $(HDDOBJ) \
 	  $(USBOBJ) $(NETOBJ) $(SCSIOBJ) $(SNDOBJ) $(VIDOBJ) \
-	  $(DEVBRANCHOBJ)
+	  $(LNXOBJ) $(DEVBRANCHOBJ)
 ifdef EXOBJ
 OBJ	+= $(EXOBJ)
 endif

@@ -6,6 +6,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
+#if __linux__
+#include "../lnx/linux.h"
+#endif
 
 #include "../ibm.h"
 #include "hdd_ide_at.h"

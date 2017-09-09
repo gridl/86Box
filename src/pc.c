@@ -59,6 +59,7 @@
 # include "win/plat_dir.h"
 # undef UNICODE
 #endif
+#include "platform/platform.h"
 #include "win/plat_joystick.h"
 #include "win/plat_keyboard.h"
 #include "win/plat_midi.h"

@@ -24,6 +24,9 @@
 #include "floppy_img.h"
 #include "fdc.h"
 #include "fdd.h"
+#if __linux__
+#include "../lnx/linux.h"
+#endif
 
 
 static struct

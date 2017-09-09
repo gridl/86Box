@@ -23,6 +23,9 @@
 #include "mem.h"
 #include "machine/machine.h"
 #include "rom.h"
+#ifdef __linux__
+#include "lnx/linux.h"
+#endif
 
 #define FLASH_IS_BXB	2
 #define FLASH_INVERT	1

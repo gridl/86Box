@@ -21,6 +21,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <wchar.h>
+#if __linux__
+#include "lnx/linux.h"
+#endif
 #include "ibm.h"
 #include "cpu/cpu.h"
 #include "device.h"

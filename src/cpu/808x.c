@@ -36,6 +36,9 @@
 #include "../pic.h"
 #include "../timer.h"
 #include "../scsi/scsi.h"
+#ifdef __linux
+#include "../lnx/lnx_io.h"
+#endif
 
 int xt_cpu_multi;
 int nmi = 0;

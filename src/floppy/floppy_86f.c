@@ -31,6 +31,10 @@
 #include "fdc.h"
 #include "fdd.h"
 #include "floppy_86f.h"
+#if __linux__
+#include "../lnx/linux.h"
+#include "../lnx/lnx_io.h"
+#endif
 
 
 #define CHUNK 16384
